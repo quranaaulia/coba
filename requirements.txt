@@ -1,0 +1,9 @@
+Flask
+pandas
+nltk
+Sastrawi
+gensim
+bertopic
+umap-learn
+scikit-learn
+plotly

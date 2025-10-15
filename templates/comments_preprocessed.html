@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="preprocessing-container">
+    <h3>Hasil Preprocessing Komentar TikTok</h3>
+    
+    <!-- Statistik Data -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5>Statistik Data</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <h6>Data Awal:</h6>
+                    <ul>
+                        <li>Jumlah data: {{ results.data_awal.jumlah_data }}</li>
+                        <li>Jumlah duplikat: {{ results.data_awal.jumlah_duplikat }}</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6>Setelah Hapus Duplikat:</h6>
+                    <ul>
+                        <li>Jumlah data: {{ results.setelah_hapus_duplikat.jumlah_data }}</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6>Hasil Akhir:</h6>
+                    <ul>
+                        <li>Jumlah data: {{ results.setelah_hapus_kosong.jumlah_data }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabel Hasil Preprocessing -->
+    <div class="card">
+        <div class="card-header">
+            <h5>Detail Hasil Preprocessing</h5>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Teks Asli</th>
+                            <th>Hasil Preprocessing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in results.hasil_preprocessing %}
+                        <tr>
+                            <td>{{ item.text }}</td>
+                            <td>{{ item.text_clean }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.preprocessing-container {
+    padding: 20px;
+}
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.card-header {
+    background: linear-gradient(135deg, #E0EAFC, #CFDEF3);
+    border-radius: 10px 10px 0 0;
+}
+.table-responsive {
+    max-height: 500px;
+    overflow-y: auto;
+}
+</style>
+{% endblock %}
