@@ -101,14 +101,29 @@ def create_2d_visualization(model, words=None, n_words=50):
 
     return fig.to_html(full_html=False)
 
-def get_word2vec_analysis():
+def get_word2vec_analysis(filepath=None):
     """Main function to get Word2Vec analysis data"""
-    model = load_word2vec_model()
+    # If no filepath provided, try to load existing model
+    if filepath is None:
+        model = load_word2vec_model()
+        if model is None:
+            return {
+                'error': 'Model Word2Vec tidak ditemukan. Pastikan file models/word2vec.model ada.'
+            }
+    else:
+        # Train new model from uploaded data
+        try:
+            df = pd.read_csv(filepath, encoding='utf-8-sig')
+            preprocessing_results = get_preprocessing_steps(df)
+            text_data = [item['text_clean'].split() for item in preprocessing_results['hasil_preprocessing'] if item['text_clean']]
 
-    if model is None:
-        return {
-            'error': 'Model Word2Vec tidak ditemukan. Pastikan file models/word2vec.model ada.'
-        }
+            # Train Word2Vec model
+            model = Word2Vec(sentences=text_data, vector_size=100, window=5, min_count=1, workers=4)
+            model.save('models/word2vec.model')
+        except Exception as e:
+            return {
+                'error': f'Gagal melatih model Word2Vec: {str(e)}'
+            }
 
     info = get_word2vec_info(model)
     embeddings = get_sample_embeddings(model)

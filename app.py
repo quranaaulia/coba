@@ -108,10 +108,14 @@ def comments_preprocessed():
 
 @app.route('/word2vec')
 def word2vec():
+    filepath = session.get('uploaded_file')
+    if not filepath or not os.path.exists(filepath):
+        flash('Silakan upload file CSV terlebih dahulu.', 'warning')
+        return redirect(url_for('upload'))
+    
     from services.word2vec_service import get_word2vec_analysis
-    data = get_word2vec_analysis()
+    data = get_word2vec_analysis(filepath)
     return render_template('word2vec.html', data=data)
-
 @app.route('/bertopic_build')
 def bertopic_build():
     return render_template('bertopic_build.html')
