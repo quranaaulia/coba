@@ -87,28 +87,30 @@ def comments_preprocessed():
     if not filepath or not os.path.exists(filepath):
         flash('Silakan upload file CSV terlebih dahulu.', 'warning')
         return redirect(url_for('upload'))
-    
+
     try:
         df = pd.read_csv(filepath, encoding='utf-8-sig')
         from services.preprocessing import get_preprocessing_steps
-        
+
         # Get all preprocessing steps
         preprocessing_results = get_preprocessing_steps(df)
-        
+
         return render_template(
             'comments_preprocessed.html',
             results=preprocessing_results,
             total_original=len(df),
-            total_processed=len(preprocessing_results['processed_data'])
+            total_processed=len(preprocessing_results['hasil_preprocessing'])
         )
-        
+
     except Exception as e:
         flash(f'Error dalam preprocessing: {str(e)}', 'danger')
         return redirect(url_for('home'))
 
 @app.route('/word2vec')
 def word2vec():
-    return render_template('word2vec.html')
+    from services.word2vec_service import get_word2vec_analysis
+    data = get_word2vec_analysis()
+    return render_template('word2vec.html', data=data)
 
 @app.route('/bertopic_build')
 def bertopic_build():
