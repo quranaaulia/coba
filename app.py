@@ -118,8 +118,21 @@ def word2vec():
     return render_template('word2vec.html', data=data)
 @app.route('/bertopic_build')
 def bertopic_build():
-    return render_template('bertopic_build.html')
+    filepath = session.get('uploaded_file')
+    if not filepath or not os.path.exists(filepath):
+        flash('Silakan upload file CSV terlebih dahulu.', 'warning')
+        return redirect(url_for('upload'))
 
+    # Check if model already exists
+    if os.path.exists('models/bertopic_model.pkl'):
+        from services.bertopic_service import get_bertopic_analysis
+        data = get_bertopic_analysis()
+        return render_template('bertopic_build.html', data=data)
+
+    # Build model only if it doesn't exist
+    from services.bertopic_service import build_bertopic_model
+    data = build_bertopic_model(filepath)
+    return render_template('bertopic_build.html', data=data)
 @app.route('/analysis')
 def analysis():
     return render_template('analysis.html')

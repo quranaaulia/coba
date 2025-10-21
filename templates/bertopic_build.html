@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="bertopic-container">
+    <h3>BERTopic Model Building</h3>
+
+    {% if data.error %}
+    <div class="alert alert-danger">
+        <strong>Error:</strong> {{ data.error }}
+    </div>
+    {% else %}
+    <!-- Penjelasan -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <p class="text-muted">
+                BERTopic digunakan untuk mengelompokkan komentar TikTok ke dalam topik-topik utama berdasarkan kesamaan makna kata dari hasil Word2Vec.
+            </p>
+        </div>
+    </div>
+
+    <!-- Coherence Score -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5>Coherence Score</h5>
+        </div>
+        <div class="card-body">
+            <h4 class="text-primary">Coherence Score (c_v): {{ "%.3f"|format(data.coherence_score) }}</h4>
+            <p class="text-muted">Nilai coherence score menunjukkan kualitas topik yang dihasilkan. Semakin tinggi nilai, semakin baik kualitas topik.</p>
+        </div>
+    </div>
+
+    <!-- Tabel Hasil Topik -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5>Hasil Topik</h5>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Topik</th>
+                            <th>Kata Kunci Dominan</th>
+                            <th>Jumlah Komentar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for topic in data.topics_summary %}
+                        <tr>
+                            <td>{{ topic.topic_id }}</td>
+                            <td>
+                                <span class="badge badge-primary">{{ topic.keywords|join(', ') }}</span>
+                            </td>
+                            <td>{{ topic.count }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Visualisasi -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle"></i>
+                <strong>Visualisasi dinonaktifkan di halaman ini untuk performa optimal.</strong>
+                <br>
+                Visualisasi topik dapat dilihat di menu <strong>Analysis</strong>.
+            </div>
+        </div>
+    </div>
+
+    <!-- Tombol Lanjut ke Analisis -->
+    <div class="text-center mt-4">
+        <a href="{{ url_for('analysis') }}" class="btn btn-primary btn-lg">
+            Lanjut ke Analisis
+        </a>
+    </div>
+    {% endif %}
+</div>
+
+<style>
+.bertopic-container {
+    padding: 20px;
+}
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.card-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+.table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+}
+.badge {
+    margin-right: 5px;
+}
+.btn-primary {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+}
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5a6fd8, #6a4190);
+}
+</style>
+{% endblock %}

@@ -50,7 +50,7 @@ def save_stem_cache():
 load_stem_cache()
 
 # Tentukan jumlah worker berdasarkan CPU cores
-MAX_WORKERS = min(multiprocessing.cpu_count(), 4)  # Max 4 workers untuk menghindari overload
+MAX_WORKERS = 1  # Gunakan 1 worker untuk menghindari memory overload
 
 def get_preprocessing_steps(df):
     """Fungsi untuk melakukan semua tahap preprocessing"""
