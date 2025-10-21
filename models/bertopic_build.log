@@ -1,0 +1,520 @@
+[2025-10-21 13:19:58] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 9448)
+[2025-10-21 13:20:00] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:22:14] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:22:15] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:23:30] BERTopic training selesai.
+[2025-10-21 13:23:30] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 141, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:23:30] Memulai fallback LDA.
+[2025-10-21 13:23:31] Coherence LDA failed: daemonic processes are not allowed to have children
+[2025-10-21 13:23:31] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:23:31] Lock file removed.
+[2025-10-21 13:48:55] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 8344)
+[2025-10-21 13:48:58] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:49:27] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:49:28] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:49:53] BERTopic training selesai.
+[2025-10-21 13:49:53] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:49:53] Memulai fallback LDA.
+[2025-10-21 13:49:53] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:49:53] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:49:53] Lock file removed.
+[2025-10-21 13:49:58] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 3088)
+[2025-10-21 13:50:00] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:50:18] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:50:20] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:50:43] BERTopic training selesai.
+[2025-10-21 13:50:43] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:50:43] Memulai fallback LDA.
+[2025-10-21 13:50:43] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:50:43] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:50:43] Lock file removed.
+[2025-10-21 13:50:45] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 6708)
+[2025-10-21 13:50:49] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:51:07] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:51:08] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:51:34] BERTopic training selesai.
+[2025-10-21 13:51:34] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:51:34] Memulai fallback LDA.
+[2025-10-21 13:51:35] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:51:35] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:51:35] Lock file removed.
+[2025-10-21 13:51:38] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 17264)
+[2025-10-21 13:51:40] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:52:24] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:52:26] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:53:05] BERTopic training selesai.
+[2025-10-21 13:53:05] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:53:05] Memulai fallback LDA.
+[2025-10-21 13:53:06] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:53:06] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:53:06] Lock file removed.
+[2025-10-21 13:53:08] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 20980)
+[2025-10-21 13:53:10] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:53:41] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:53:41] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:53:58] BERTopic training selesai.
+[2025-10-21 13:53:58] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:53:58] Memulai fallback LDA.
+[2025-10-21 13:53:59] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:53:59] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:53:59] Lock file removed.
+[2025-10-21 13:54:02] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 17080)
+[2025-10-21 13:54:03] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:54:14] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:54:15] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:54:31] BERTopic training selesai.
+[2025-10-21 13:54:31] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:54:31] Memulai fallback LDA.
+[2025-10-21 13:54:31] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:54:31] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:54:31] Lock file removed.
+[2025-10-21 13:54:32] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 2756)
+[2025-10-21 13:54:33] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:54:44] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:54:45] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:55:01] BERTopic training selesai.
+[2025-10-21 13:55:01] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:55:01] Memulai fallback LDA.
+[2025-10-21 13:55:01] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:55:01] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:55:01] Lock file removed.
+[2025-10-21 13:55:02] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 9980)
+[2025-10-21 13:55:03] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:55:14] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:55:14] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:55:32] BERTopic training selesai.
+[2025-10-21 13:55:32] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:55:32] Memulai fallback LDA.
+[2025-10-21 13:55:32] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:55:32] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:55:32] Lock file removed.
+[2025-10-21 13:55:37] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 6316)
+[2025-10-21 13:55:39] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:55:49] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:55:50] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:56:06] BERTopic training selesai.
+[2025-10-21 13:56:06] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:56:06] Memulai fallback LDA.
+[2025-10-21 13:56:07] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:56:07] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:56:07] Lock file removed.
+[2025-10-21 13:56:07] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 13560)
+[2025-10-21 13:56:08] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:56:19] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:56:20] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:56:37] BERTopic training selesai.
+[2025-10-21 13:56:37] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:56:37] Memulai fallback LDA.
+[2025-10-21 13:56:37] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:56:37] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:56:37] Lock file removed.
+[2025-10-21 13:56:43] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 18056)
+[2025-10-21 13:56:44] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:56:56] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:56:56] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:57:13] BERTopic training selesai.
+[2025-10-21 13:57:13] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:57:13] Memulai fallback LDA.
+[2025-10-21 13:57:13] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:57:13] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:57:13] Lock file removed.
+[2025-10-21 13:57:19] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 12404)
+[2025-10-21 13:57:20] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:57:32] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:57:32] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:57:49] BERTopic training selesai.
+[2025-10-21 13:57:49] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:57:49] Memulai fallback LDA.
+[2025-10-21 13:57:49] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:57:49] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:57:49] Lock file removed.
+[2025-10-21 13:57:55] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 20828)
+[2025-10-21 13:57:56] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:58:07] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:58:08] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:58:25] BERTopic training selesai.
+[2025-10-21 13:58:25] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:58:25] Memulai fallback LDA.
+[2025-10-21 13:58:25] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:58:25] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:58:25] Lock file removed.
+[2025-10-21 13:58:31] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 5432)
+[2025-10-21 13:58:32] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:58:43] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:58:44] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:59:00] BERTopic training selesai.
+[2025-10-21 13:59:00] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:59:00] Memulai fallback LDA.
+[2025-10-21 13:59:01] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:59:01] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:59:01] Lock file removed.
+[2025-10-21 13:59:01] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 17404)
+[2025-10-21 13:59:03] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 13:59:13] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 13:59:14] Data disampling ke 200 items untuk performa.
+[2025-10-21 13:59:30] BERTopic training selesai.
+[2025-10-21 13:59:30] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 13:59:30] Memulai fallback LDA.
+[2025-10-21 13:59:30] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 13:59:30] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 13:59:30] Lock file removed.
+[2025-10-21 16:36:50] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 22452)
+[2025-10-21 16:36:59] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:37:00] Lock file removed.
+[2025-10-21 16:37:29] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 21952)
+[2025-10-21 16:37:31] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:38:00] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:38:00] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:38:28] BERTopic training selesai.
+[2025-10-21 16:38:28] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:38:28] Memulai fallback LDA.
+[2025-10-21 16:38:29] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:38:29] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:38:29] Lock file removed.
+[2025-10-21 16:39:09] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 14120)
+[2025-10-21 16:39:11] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:39:29] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:39:30] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:40:00] BERTopic training selesai.
+[2025-10-21 16:40:00] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:40:00] Memulai fallback LDA.
+[2025-10-21 16:40:00] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:40:00] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:40:00] Lock file removed.
+[2025-10-21 16:40:05] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 19700)
+[2025-10-21 16:40:07] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:40:36] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:40:39] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:41:20] BERTopic training selesai.
+[2025-10-21 16:41:20] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:41:20] Memulai fallback LDA.
+[2025-10-21 16:41:20] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:41:20] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:41:20] Lock file removed.
+[2025-10-21 16:41:23] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 19932)
+[2025-10-21 16:41:25] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:42:04] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:42:07] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:42:45] BERTopic training selesai.
+[2025-10-21 16:42:45] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:42:45] Memulai fallback LDA.
+[2025-10-21 16:42:46] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:42:46] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:42:46] Lock file removed.
+[2025-10-21 16:42:46] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 10196)
+[2025-10-21 16:42:48] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:43:02] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:43:03] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:43:20] BERTopic training selesai.
+[2025-10-21 16:43:20] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:43:20] Memulai fallback LDA.
+[2025-10-21 16:43:20] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:43:20] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:43:20] Lock file removed.
+[2025-10-21 16:43:21] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 12352)
+[2025-10-21 16:43:23] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:43:34] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:43:34] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:43:51] BERTopic training selesai.
+[2025-10-21 16:43:51] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:43:51] Memulai fallback LDA.
+[2025-10-21 16:43:51] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:43:52] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:43:52] Lock file removed.
+[2025-10-21 16:43:52] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 21308)
+[2025-10-21 16:43:54] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:44:05] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:44:05] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:44:40] BERTopic training selesai.
+[2025-10-21 16:44:40] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:44:40] Memulai fallback LDA.
+[2025-10-21 16:44:41] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:44:41] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:44:41] Lock file removed.
+[2025-10-21 16:44:43] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 21108)
+[2025-10-21 16:44:44] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:45:16] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:45:19] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:45:50] BERTopic training selesai.
+[2025-10-21 16:45:50] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:45:50] Memulai fallback LDA.
+[2025-10-21 16:45:50] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:45:50] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:45:50] Lock file removed.
+[2025-10-21 16:45:56] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 18048)
+[2025-10-21 16:45:57] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:46:08] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:46:09] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:46:26] BERTopic training selesai.
+[2025-10-21 16:46:26] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:46:26] Memulai fallback LDA.
+[2025-10-21 16:46:27] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:46:27] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:46:27] Lock file removed.
+[2025-10-21 16:46:31] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 2744)
+[2025-10-21 16:46:32] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:46:45] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:46:46] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:47:21] BERTopic training selesai.
+[2025-10-21 16:47:21] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:47:21] Memulai fallback LDA.
+[2025-10-21 16:47:22] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:47:22] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:47:22] Lock file removed.
+[2025-10-21 16:47:24] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 19308)
+[2025-10-21 16:47:25] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:47:55] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:47:56] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:48:13] BERTopic training selesai.
+[2025-10-21 16:48:13] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:48:13] Memulai fallback LDA.
+[2025-10-21 16:48:13] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:48:13] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:48:13] Lock file removed.
+[2025-10-21 16:48:17] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 19212)
+[2025-10-21 16:48:19] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:48:30] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:48:30] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:48:49] BERTopic training selesai.
+[2025-10-21 16:48:49] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:48:49] Memulai fallback LDA.
+[2025-10-21 16:48:49] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:48:49] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:48:49] Lock file removed.
+[2025-10-21 16:48:53] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 12020)
+[2025-10-21 16:48:54] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:49:06] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:49:06] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:49:24] BERTopic training selesai.
+[2025-10-21 16:49:24] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:49:24] Memulai fallback LDA.
+[2025-10-21 16:49:25] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:49:25] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:49:25] Lock file removed.
+[2025-10-21 16:49:28] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 16168)
+[2025-10-21 16:49:29] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:49:50] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:49:51] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:50:29] BERTopic training selesai.
+[2025-10-21 16:50:29] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:50:29] Memulai fallback LDA.
+[2025-10-21 16:50:30] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:50:30] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:50:30] Lock file removed.
+[2025-10-21 16:50:33] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 16944)
+[2025-10-21 16:50:35] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:50:51] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:50:52] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:51:11] BERTopic training selesai.
+[2025-10-21 16:51:11] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:51:11] Memulai fallback LDA.
+[2025-10-21 16:51:11] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:51:11] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:51:11] Lock file removed.
+[2025-10-21 16:51:14] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 19388)
+[2025-10-21 16:51:16] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:51:35] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:51:36] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:51:36] Lock file removed.
+[2025-10-21 16:56:45] Background build started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv (PID 20504)
+[2025-10-21 16:56:48] Worker started for D:\SKRIPSI\tugasakhir\instance\uploads\dataset_tiktok-comments-scraper_2025-10-13_12-35-36-858.csv
+[2025-10-21 16:57:27] BERTopic & SentenceTransformer tersedia.
+[2025-10-21 16:57:29] Data disampling ke 200 items untuk performa.
+[2025-10-21 16:58:13] BERTopic training selesai.
+[2025-10-21 16:58:13] BERTopic build error: 'bool' object has no attribute 'sum'
+Traceback (most recent call last):
+  File "D:\SKRIPSI\tugasakhir\services\bertopic_service.py", line 146, in _build_worker
+    count = int((topics == t).sum())
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'bool' object has no attribute 'sum'
+
+[2025-10-21 16:58:13] Memulai fallback LDA.
+[2025-10-21 16:58:14] Coherence calculation failed: daemonic processes are not allowed to have children
+[2025-10-21 16:58:14] LDA model saved to models/bertopic_model.pkl
+[2025-10-21 16:58:14] Lock file removed.

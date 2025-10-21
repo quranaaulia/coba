@@ -8,49 +8,63 @@
         <strong>Error:</strong> {{ data.error }}
     </div>
     {% else %}
-    <!-- Penjelasan -->
-    <div class="card mb-4">
-        <div class="card-body">
-            <p class="text-muted">
-                BERTopic digunakan untuk mengelompokkan komentar TikTok ke dalam topik-topik utama berdasarkan kesamaan makna kata dari hasil Word2Vec.
-            </p>
+
+    <!-- Status / Controls -->
+    <div id="status-area" class="mb-4" data-initial-status="{{ data.status | default('') }}">
+        {% if data.status == 'ready' %}
+        <div class="alert alert-warning">
+            <strong>Belum ada model.</strong> Klik tombol <strong>Start Build</strong> untuk memulai pembuatan model.
         </div>
+        <form id="start-build-form" method="post" action="{{ url_for('bertopic_build') }}">
+            <button type="submit" class="btn btn-primary">Start Build (background)</button>
+        </form>
+
+        {% elif data.status == 'started' %}
+        <div class="alert alert-info">
+            Proses build dimulai... Halaman ini akan mengecek status secara otomatis.
+        </div>
+
+        {% elif data.status == 'building' %}
+        <div class="alert alert-info">
+            Model sedang dibangun. Mohon tunggu — proses berjalan di background.
+        </div>
+
+        {% elif data.status == 'done' %}
+        <div class="alert alert-success">
+            Model sudah tersedia. Kamu bisa melihat hasilnya atau rebuild ulang jika ingin model baru.
+        </div>
+        <form method="post" action="{{ url_for('bertopic_build', rebuild=1) }}">
+            <button type="submit" class="btn btn-warning">Rebuild Model</button>
+        </form>
+        {% endif %}
     </div>
 
-    <!-- Coherence Score -->
+    <!-- Jika model sudah tersedia, tampilkan hasil -->
+    {% if data.model_type %}
     <div class="card mb-4">
-        <div class="card-header">
-            <h5>Coherence Score</h5>
-        </div>
+        <div class="card-header"><h5>Hasil Model ({{ data.model_type }})</h5></div>
         <div class="card-body">
-            <h4 class="text-primary">Coherence Score (c_v): {{ "%.3f"|format(data.coherence_score) }}</h4>
-            <p class="text-muted">Nilai coherence score menunjukkan kualitas topik yang dihasilkan. Semakin tinggi nilai, semakin baik kualitas topik.</p>
-        </div>
-    </div>
-
-    <!-- Tabel Hasil Topik -->
-    <div class="card mb-4">
-        <div class="card-header">
-            <h5>Hasil Topik</h5>
-        </div>
-        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Coherence Score</h6>
+                    <p class="h4 text-primary">{{ "%.3f"|format(data.coherence_score) }}</p>
+                </div>
+                <div class="col-md-6">
+                    <h6>Total Topik</h6>
+                    <p class="h4">{{ data.total_topics }}</p>
+                </div>
+            </div>
+            <hr>
+            <h6>Topik Teratas</h6>
             <div class="table-responsive">
                 <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Topik</th>
-                            <th>Kata Kunci Dominan</th>
-                            <th>Jumlah Komentar</th>
-                        </tr>
-                    </thead>
+                    <thead><tr><th>Topik</th><th>Kata Kunci</th><th>Jumlah</th></tr></thead>
                     <tbody>
-                        {% for topic in data.topics_summary %}
+                        {% for t in data.topics_summary %}
                         <tr>
-                            <td>{{ topic.topic_id }}</td>
-                            <td>
-                                <span class="badge badge-primary">{{ topic.keywords|join(', ') }}</span>
-                            </td>
-                            <td>{{ topic.count }}</td>
+                            <td>{{ t.topic_id }}</td>
+                            <td>{{ t.keywords|join(', ') }}</td>
+                            <td>{{ t.count }}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
@@ -59,56 +73,88 @@
         </div>
     </div>
 
-    <!-- Info Visualisasi -->
     <div class="card mb-4">
         <div class="card-body">
             <div class="alert alert-info">
-                <i class="fas fa-info-circle"></i>
-                <strong>Visualisasi dinonaktifkan di halaman ini untuk performa optimal.</strong>
-                <br>
-                Visualisasi topik dapat dilihat di menu <strong>Analysis</strong>.
+                Visualisasi interaktif dinonaktifkan di halaman build. Untuk melihat visualisasi (jika tersedia), buka menu <strong>Analysis</strong>.
             </div>
         </div>
     </div>
 
-    <!-- Tombol Lanjut ke Analisis -->
     <div class="text-center mt-4">
-        <a href="{{ url_for('analysis') }}" class="btn btn-primary btn-lg">
-            Lanjut ke Analisis
-        </a>
+        <a href="{{ url_for('analysis') }}" class="btn btn-primary btn-lg">Lanjut ke Analisis</a>
     </div>
+
+    {% else %}
+    <!-- Tempat pesan sementara (build belum selesai) -->
+    <div id="progress-area" class="card mb-4" style="display:none;">
+        <div class="card-body">
+            <p id="progress-message" class="fw-bold">Memulai build... mohon tunggu.</p>
+            <div class="progress" style="height: 25px;">
+                <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated"
+                     role="progressbar" style="width: 0%">0%</div>
+            </div>
+            <p class="mt-2"><small>Halaman akan otomatis melakukan refresh kecil untuk memeriksa status setiap 5 detik.</small></p>
+        </div>
+    </div>
+    {% endif %}
+
     {% endif %}
 </div>
 
 <style>
-.bertopic-container {
-    padding: 20px;
-}
-.card {
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 10px;
-}
-.card-header {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    border-radius: 10px 10px 0 0;
-}
-.table-responsive {
-    max-height: 400px;
-    overflow-y: auto;
-}
-.badge {
-    margin-right: 5px;
-}
-.btn-primary {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    border: none;
-    padding: 12px 30px;
-    border-radius: 25px;
-}
-.btn-primary:hover {
-    background: linear-gradient(135deg, #5a6fd8, #6a4190);
-}
+.bertopic-container { padding: 20px; }
+.card { margin-bottom: 20px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);}
+.card-header { background: linear-gradient(135deg,#667eea,#764ba2); color:white; border-radius:8px 8px 0 0;}
+.btn-primary { background: linear-gradient(135deg,#667eea,#764ba2); border:none; }
+.btn-warning { background: linear-gradient(135deg,#f6d365,#fda085); border:none; color:#000; }
+.progress { background-color: #f3f3f3; border-radius: 10px; overflow: hidden; }
+.progress-bar { background: linear-gradient(90deg,#667eea,#764ba2); font-weight: bold; }
 </style>
+
+<script>
+(function() {
+    const statusArea = document.getElementById('status-area');
+    const progressArea = document.getElementById('progress-area');
+    const progressBar = document.getElementById('progress-bar');
+    const progressMessage = document.getElementById('progress-message');
+    let progressValue = 0;
+
+    // fungsi update progress bar secara visual
+    function updateProgress(percent, message) {
+        if (!progressBar) return;
+        progressValue = Math.min(100, percent);
+        progressBar.style.width = progressValue + "%";
+        progressBar.textContent = progressValue + "%";
+        if (message) progressMessage.textContent = message;
+    }
+
+    // Polling status dari Flask backend
+    function checkStatus() {
+        fetch('{{ url_for("bertopic_status") }}')
+        .then(r => r.json())
+        .then(data => {
+            if (!data || !data.status) return;
+            if (data.status === 'done') {
+                updateProgress(100, "Selesai! Model berhasil dibangun.");
+                setTimeout(() => location.reload(), 1500);
+            } else if (data.status === 'building' || data.status === 'started') {
+                if (progressArea) progressArea.style.display = 'block';
+                updateProgress(progressValue + 10, "Model sedang dibangun di background...");
+                setTimeout(checkStatus, 5000);
+            }
+        })
+        .catch(err => {
+            console.error('Status check failed', err);
+            setTimeout(checkStatus, 5000);
+        });
+    }
+
+    const initialStatus = statusArea ? (statusArea.dataset.initialStatus || null) : null;
+    if (initialStatus === 'started' || initialStatus === 'building') {
+        if (progressArea) progressArea.style.display = 'block';
+        checkStatus();
+    }
+})();
+</script>
 {% endblock %}
